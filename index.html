@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link href='https://fonts.google.com/specimen/Noto+Serif:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/nav-style.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
     
 <body>
@@ -72,6 +72,7 @@
          <div class="back-to-top">
             <a href="#">Back to Top</a>
         </div>
+           <hr class="mobile-first">
          <section id="pictures" class="gallery">
                 <div class="content">
                 <figure>
@@ -103,7 +104,7 @@
                 </picture> 
                     <figcaption>Flowers in December.</figcaption>
             </figure>
-            <hr>                   
+                             
             </div>
             </section>
             <div class="back-to-top">
@@ -131,40 +132,40 @@
     <hr class="mobile-first">
     <section id="contact" class="form-container">
         <h2>Get in touch!</h2>
-        <hr class="mobile-first"><hr class="mobile-first">
+        
         <div>
         <form method="POST" action="https://formspree.io/YOUREMAILHERE">
-            <fieldset><legend>Please feel free to contact me</legend>
-            <hr class="mobile-first"><hr class="mobile-first">
-            <p>Please enter your email address</p>
-            <p></p>
-            <input id="email" name="email">
-                <label for="email">Email</label>
-            <br><br><br><br>
+            <fieldset><legend>Fill the form if you wish to contact me.</legend>
+            <br>
+           <div  class="form-group">
+                <label class="form-label" for="email">Enter your Email Below</label>
+               <br><br>
+                <input class="form-control" id="email" type="email" name="email"></div>       
+            <br><br>
             <label id="yes_no_radio">I would like a reply:</label>
             <br>
             <br>
             <input type="radio" name="yes_no" checked>Yes
                 <input type="radio" name="yes_no">No
             <br>
-            <br>
-            <p>Leave your message below</p>
-            <textarea id="message" name="message"></textarea>
-            <br>
-                <label for="message">Message</label>
-            <br>
+            <br>           
+            <div class="form-group">
+                <label class="form-label" for="textarea">Should you have any thoughts, please leave below.</label><br><br>
+                <textarea class="form-control" name="textarea" id="textarea"></textarea>
+                </div>
+                <br>
             <button type="submit">Send Message</button>
-            <hr class="mobile-first"><hr class="mobile-first">                                         
+                                           
             </fieldset> </form>      
         </div>
     </section>
 
-<footer><hr class="mobile-first"><hr class="mobile-first">
+<footer><hr class="mobile-first">
     <p class="footer">This is my website &copy; Lingyi Xie 2019. </p>
 </footer>
     <div class="back-to-top">
         <a href="#">Back to Top</a>
-    </div><hr class="mobile-first"><hr class="mobile-first">
+    </div><hr class="mobile-irst"><hr class="mobile-first">
     <script>
         let mainNav = document.getElementById('js-menu');
         let navBarToggle = document.getElementById('js-navbar-toggle');

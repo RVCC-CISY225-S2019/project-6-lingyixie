@@ -22,14 +22,8 @@ font-size : 90%;
 text-align : left;
 }
 
-label{
-    border: solid 0.05em;
-    box-sizing:border-box;
-    padding-bottom: 2.5em;
-    padding-right: 25em;
-    padding-left: 0.5em;
-    padding-top: 0.5em;
-}
+
+
 textarea{
     width: auto;
     height: auto;
@@ -40,6 +34,5 @@ textarea:focus{
 }
 
 input:focus{
-    background: pink;
+    background:pink;
 }
-
