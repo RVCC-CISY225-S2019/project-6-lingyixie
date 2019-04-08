@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link href='https://fonts.google.com/specimen/Noto+Serif:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/nav-style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
     
 <body>
@@ -138,18 +138,20 @@
             <hr class="mobile-first"><hr class="mobile-first">
             <p>Please enter your email address</p>
             <p></p>
-            <input type="email" name="email">
+            <input id="email" name="email">
+                <label for="email">Email</label>
             <br><br><br><br>
             <label id="yes_no_radio">I would like a reply:</label>
             <br>
             <br>
             <input type="radio" name="yes_no" checked>Yes
-                    <input type="radio" name="yes_no">No
+                <input type="radio" name="yes_no">No
             <br>
             <br>
             <p>Leave your message below</p>
-            <textarea name="message"></textarea>
+            <textarea id="message" name="message"></textarea>
             <br>
+                <label for="message">Message</label>
             <br>
             <button type="submit">Send Message</button>
             <hr class="mobile-first"><hr class="mobile-first">                                         
