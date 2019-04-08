@@ -7,17 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link href='https://fonts.google.com/specimen/Noto+Serif:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/nav-style.css">
     <link rel="stylesheet" href="styles.css">
 </head>
     
 <body>
-    <main class="main">
-        <header class="header">
-            <div class="content">
-                <img class="logo main-col" src="images/logo-1913689.svg" alt="Company Logo">
-                <div class="page-title">Web Dev I</div>
+    <a href="#main" class="skip">Skip to main</a>    
+     <header id="header" class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id="symbol-toggle" class="fas fa-bars"></i>
+            </span>
+      <a href="#header" class="logo">
+            <div class="logo-container">
+             <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+             <h1 class="page-title">Web Dev I</h1>
             </div>
-        </header>
+            </a>
+            
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#main" class="nav-links">Main</a>
+            </li>
+            <li>
+                <a href="#about-me" class="nav-links">About Me</a>
+            </li>
+            <li>
+                <a href="#pictures" class="nav-links">My Photos</a>
+             </li>
+            <li>
+                <a href="#story" class="nav-links">A Story</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <main id="main" tabindex="-1" class="main">
         <section class="hero">
             <div class="content">
            <picture>
@@ -42,6 +69,9 @@
                 </div>
             </div>
         </section>
+         <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
         <section class="pictures">
                 <div class="content">
                 <figure>
@@ -73,11 +103,12 @@
                 </picture> 
                     <figcaption>Flowers in December.</figcaption>
             </figure>
-            <hr>
-                    
+            <hr>                   
             </div>
             </section>
-    </main>
+            <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
     <br>
         <article id="story" class="story">
         <h1>Why April 1st is Fool's day</h1>
@@ -92,12 +123,15 @@
             <p>In 1957, the BBC reported that Swiss farmers were experiencing a record spaghetti crop and showed footage of people harvesting noodles from trees; numerous viewers were fooled. In 1985, Sports Illustrated tricked many of its readers when it ran a made-up article about a rookie pitcher named Sidd Finch who could throw a fastball over 168 miles per hour.</p>
             <p>In 1996, Taco Bell, the fast-food restaurant chain, duped people when it announced it had agreed to purchase Philadelphia’s Liberty Bell and intended to rename it the Taco Liberty Bell. In 1998, after Burger King advertised a “Left-Handed Whopper,” scores of clueless customers requested the fake sandwich.</p>
         </article>
-    
+    </main>
+     <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
     <section id="contact" class="form-container">
         <h2>Get in touch!</h2>
         <div>
-                <fieldset><legend>Please feel free to contact me</legend>
         <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+            <fieldset><legend>Please feel free to contact me</legend>
             
             <p>Please enter your email address</p>
             <p></p>
@@ -114,15 +148,35 @@
             <textarea name="message"></textarea>
             <br>
             <br>
-            <button type="submit">Send Message</button></form>
+            <button type="submit">Send Message</button>
                                                      
-                </fieldset>       
+            </fieldset> </form>      
         </div>
     </section>
 
 <footer>
     <p class="footer">This is my website &copy; Lingyi Xie 2019. </p>
 </footer>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        let symbolToggle = document.getElementById('symbol-toggle');
+
+
+        navBarToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+            if (symbolToggle.classList.contains('fa-bars')) {
+                symbolToggle.classList.remove('fa-bars');
+                symbolToggle.classList.add('fa-times');
+            } else {
+                symbolToggle.classList.remove('fa-times');
+                symbolToggle.classList.add('fa-bars');
+            }
+        });
+    </script>
     </body>
     
 </html>
