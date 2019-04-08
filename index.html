@@ -137,20 +137,30 @@
         <form method="POST" action="https://formspree.io/YOUREMAILHERE">
             <fieldset><legend>Fill the form if you wish to contact me.</legend>
             <br>
-           <div  class="form-group">
-                <label class="form-label" for="email">Enter your Email Below</label>
-               <br><br>
+                <div  class="form-group">
+                <label class="form-label" for="first-name">First Name</label>
+               <br>                 
+                <input class="form-control" id="first-name" type="text" name="first-name"></div> 
+                <br>
+                <div  class="form-group">
+                <label class="form-label" for="last-name">Last Name</label>
+               <br>               
+                <input class="form-control" id="last-name" type="text" name="last-name"></div> 
+                <br>
+            <div  class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+               <br>
                 <input class="form-control" id="email" type="email" name="email"></div>       
-            <br><br>
+            <br>
             <label id="yes_no_radio">I would like a reply:</label>
             <br>
-            <br>
+            
             <input type="radio" name="yes_no" checked>Yes
                 <input type="radio" name="yes_no">No
             <br>
             <br>           
-            <div class="form-group">
-                <label class="form-label" for="textarea">Should you have any thoughts, please leave below.</label><br><br>
+                <div class="form-group">
+                <label class="form-label" for="textarea">Should you have any thoughts, please leave below.</label><br>
                 <textarea class="form-control" name="textarea" id="textarea"></textarea>
                 </div>
                 <br>
